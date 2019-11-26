@@ -1,7 +1,8 @@
 # alpine-pdk
 
-[![Docker Stars](https://img.shields.io/docker/stars/barnumbirr/alpine-pdk.svg?style=flat-square)](https://hub.docker.com/r/barnumbirr/alpine-pdk/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/barnumbirr/alpine-pdk.svg?style=flat-square)](https://hub.docker.com/r/barnumbirr/alpine-pdk/)
+[![Docker Build](https://img.shields.io/docker/cloud/build/barnumbirr/alpine-pdk.svg)](https://hub.docker.com/r/barnumbirr/alpine-pdk/)
+[![Docker Stars](https://img.shields.io/docker/stars/barnumbirr/alpine-pdk.svg)](https://hub.docker.com/r/barnumbirr/alpine-pdk/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/barnumbirr/alpine-pdk.svg)](https://hub.docker.com/r/barnumbirr/alpine-pdk/)
 [![Image size](https://images.microbadger.com/badges/image/barnumbirr/alpine-pdk.svg)](https://microbadger.com/images/barnumbirr/alpine-pdk)
 
 Puppet Development Kit (PDK) Docker Image based on Alpine Linux.
