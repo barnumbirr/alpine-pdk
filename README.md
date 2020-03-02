@@ -17,7 +17,7 @@ $ docker pull barnumbirr/alpine-pdk:latest
 
 # Pull a specific tag
 $ docker pull barnumbirr/alpine-pdk:<tag>
-``
+```
 
 ## License:
 
