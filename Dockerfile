@@ -10,7 +10,7 @@ RUN apk add --no-cache \
     ruby-dev
 
 RUN gem install \
-    --no-rdoc --no-ri \
+    --no-document \
     pdk -v $PUPPET_DEVELOPMENT_KIT_VERSION
 
 ENTRYPOINT ["/usr/bin/pdk"]
