@@ -1,10 +1,5 @@
 # alpine-pdk
 
-[![Docker Build](https://img.shields.io/docker/cloud/build/barnumbirr/alpine-pdk.svg)](https://hub.docker.com/r/barnumbirr/alpine-pdk/)
-[![Docker Stars](https://img.shields.io/docker/stars/barnumbirr/alpine-pdk.svg)](https://hub.docker.com/r/barnumbirr/alpine-pdk/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/barnumbirr/alpine-pdk.svg)](https://hub.docker.com/r/barnumbirr/alpine-pdk/)
-[![Image size](https://images.microbadger.com/badges/image/barnumbirr/alpine-pdk.svg)](https://microbadger.com/images/barnumbirr/alpine-pdk)
-
 Puppet Development Kit (PDK) Docker Image based on Alpine Linux.
 
 This image is 4 times smaller (±200MB vs ±850MB) than the [official PDK Docker image](https://github.com/puppetlabs/pdk-docker).
@@ -13,10 +8,10 @@ This image is 4 times smaller (±200MB vs ±850MB) than the [official PDK Docker
 
 ```bash
 # Pull the latest version
-$ docker pull barnumbirr/alpine-pdk:latest
+$ docker pull ghcr.io/barnumbirr/alpine-pdk:latest
 
 # Pull a specific tag
-$ docker pull barnumbirr/alpine-pdk:<tag>
+$ docker pull ghcr.io/barnumbirr/alpine-pdk:<tag>
 ```
 
 ## License:
