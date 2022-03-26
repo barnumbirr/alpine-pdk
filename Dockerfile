@@ -1,17 +1,17 @@
-FROM alpine:3.14
+FROM alpine:3.15
 
 ENV PDK_DISABLE_ANALYTICS=true \
     PUPPET_DEVELOPMENT_KIT_VERSION=2.4.0
 
 RUN apk add --no-cache \
     build-base \
-    libffi-dev \
     ruby \
-    ruby-dev \
-    ruby-io-console
+    ruby-dev
 
 RUN gem install \
     --no-document \
-    pdk -v $PUPPET_DEVELOPMENT_KIT_VERSION
+    pdk -v $PUPPET_DEVELOPMENT_KIT_VERSION && \
+    gem cleanup && \
+    rm -rf /usr/lib/ruby/gems/*/cache/*
 
 ENTRYPOINT ["/usr/bin/pdk"]
