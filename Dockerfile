@@ -10,8 +10,10 @@ ENV PDK_DISABLE_ANALYTICS=true \
 
 RUN apk add --no-cache \
     build-base \
+    libffi-dev \
     ruby \
-    ruby-dev
+    ruby-dev \
+    ruby-io-console
 
 RUN gem install \
     --no-document \
