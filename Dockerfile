@@ -1,4 +1,9 @@
-FROM alpine:3.16
+FROM alpine:3.14
+# Keep 'older' Alpine/Ruby version until
+# https://github.com/puppetlabs/pdk/issues/1171
+# is resolved.
+# See: https://github.com/barnumbirr/action-forge-publish/issues/5
+
 
 ENV PDK_DISABLE_ANALYTICS=true \
     PUPPET_DEVELOPMENT_KIT_VERSION=2.5.0
