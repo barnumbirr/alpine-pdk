@@ -1,23 +1,15 @@
-FROM alpine:3.14
-# Keep 'older' Alpine/Ruby version until
-# https://github.com/puppetlabs/pdk/issues/1171
-# is resolved.
-# See: https://github.com/barnumbirr/action-forge-publish/issues/5
-
+FROM alpine:3.18
 
 ENV PDK_DISABLE_ANALYTICS=true \
-    PUPPET_DEVELOPMENT_KIT_VERSION=2.7.1
+    PUPPET_DEVELOPMENT_KIT_VERSION=3.0.0
 
 RUN apk add --no-cache \
     build-base \
-    libffi-dev \
-    ruby \
-    ruby-dev \
-    ruby-io-console
+    ruby-dev
 
 RUN gem install \
     --no-document \
-    pdk -v $PUPPET_DEVELOPMENT_KIT_VERSION && \
+    pdk:$PUPPET_DEVELOPMENT_KIT_VERSION && \
     gem cleanup && \
     rm -rf /usr/lib/ruby/gems/*/cache/*
 
