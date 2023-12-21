@@ -1,10 +1,11 @@
-FROM alpine:3.18
+FROM alpine:3.19
 
 ENV PDK_DISABLE_ANALYTICS=true \
-    PUPPET_DEVELOPMENT_KIT_VERSION=3.0.0
+    PUPPET_DEVELOPMENT_KIT_VERSION=3.0.1
 
 RUN apk add --no-cache \
     build-base \
+    libffi-dev \
     ruby-dev
 
 RUN gem install \
