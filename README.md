@@ -2,7 +2,7 @@
 
 Puppet Development Kit (PDK) Docker Image based on Alpine Linux.
 
-This image is about 1.7 times smaller (±274MB vs ±467MB) than the [official PDK Docker image](https://github.com/puppetlabs/pdk-docker).
+This image is about 1.8 times smaller (±276MB vs ±495MB) than the [official PDK Docker image](https://github.com/puppetlabs/pdk-docker).
 
 ## Usage:
 
@@ -17,7 +17,7 @@ $ docker pull ghcr.io/barnumbirr/alpine-pdk:<tag>
 ## License:
 
 ```
-Copyright 2019-2023 Martin Simon
+Copyright 2019-2024 Martin Simon
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
