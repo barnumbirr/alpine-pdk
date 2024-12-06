@@ -2,7 +2,7 @@
 
 Puppet Development Kit (PDK) Docker Image based on Alpine Linux.
 
-This image is about 2.6 times smaller (±272MB vs ±707MB) than the [official PDK Docker image](https://github.com/puppetlabs/pdk-docker).
+This image is about 2.4 times smaller (±300MB vs ±760MB) than the [official PDK Docker image](https://github.com/puppetlabs/pdk-docker).
 
 ## Usage:
 

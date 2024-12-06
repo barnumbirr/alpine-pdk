@@ -1,7 +1,7 @@
-FROM alpine:3.19
+FROM alpine:3.21
 
 ENV PDK_DISABLE_ANALYTICS=true \
-    PUPPET_DEVELOPMENT_KIT_VERSION=3.3.0
+    PUPPET_DEVELOPMENT_KIT_VERSION=3.4.0
 
 RUN apk add --no-cache \
     build-base \
